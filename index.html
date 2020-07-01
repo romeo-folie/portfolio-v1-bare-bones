@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/app.css">
+  <title>Mr.Folie</title>
+</head>
+<body>
+  <header class="top-navigation" id="navbar">
+    <nav class="navbar" >
+      <div class="brand"> 
+          <a href="#home">
+            {rxnf} 
+          </a> 
+      </div>
+      
+      <ul class="navlist">
+          <li> <a class="nav-link" href="#about">About</a></li>
+          <li> <a class="nav-link" href="#skills">Skills</a></li>
+          <li> <a class="nav-link" href="#work">Work</a></li>
+          <li> <a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="dropdown-menu">
+          <a class="dropdown-link" onclick="toggleDropdown()" href="javascript:void(0);">&#9776;</a>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="left-bar">
+    <ul class="social-media-nav">
+      <li>
+        <a href="#github">
+          <img src="assets/github.svg" alt="github_icon">
+        </a>
+      </li>
+      <li>
+        <a href="#instagram">
+          <img src="assets/instagram.svg" alt="instagram_icon">
+        </a>
+      </li>
+      <li>
+        <a href="#twitter">
+          <img src="assets/twitter.svg" alt="twitter_icon">
+        </a>
+      </li>  
+    </ul>
+  </div>
+
+  <div class="right-bar">
+    <a href="">romeofolie1@gmail.com</a>
+  </div>
+
+  <div class="content-wrapper">
+    <section class="intro-section">
+      <h1>Romeo Nutifafa Folie</h1>
+      <h2>Learner, Builder, Software Engineer.</h2>
+      <h3>Accra, Ghana.</h3>
+      <button class="contact-btn">
+        Contact Me
+      </button>
+    </section>
+
+    <section class="about-section">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+          nisi ut aliquip ex ea commodo consequat.
+          <br>
+          <br>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+        <button class="cv-download-btn">
+          Download CV
+        </button>
+      </div>
+
+      <div class="about-image">
+
+      </div>
+    </section>
+
+    <section class="skill-section">
+      <h2>Skills</h2>
+      <p>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+        nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <div class="skill-categories-wrapper">
+        <div class="skill-category">
+          <h3>Design</h3>
+        <input class="skill-range" min="1" max="100" value="80" type="range">
+          <ul class="tool-list">
+            <li>Adobe XD</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <input class="skill-range" min="1" max="100" value="85" type="range">
+          <ul class="tool-list">
+            <li>HTML & (S)CSS</li>
+            <li>Javascript &#8227; Vue</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <input class="skill-range" min="1" max="100" value="90" type="range">
+          <ul class="tool-list">
+            <li>Javascript &#8227; Node</li>
+            <li>Python &#8227; Django</li>
+            <li>PHP &#8227; Laravel</li>
+            <li>GraphQL</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="project-section">
+      <h2>Some of my work</h3>
+      <div class="project-grid">
+
+        <div class="project-card">
+          <div class="project-card-content">
+          <div class="project-links">
+            <a href=""><img src="assets/github.svg" alt=""></a>
+          </div>
+          <h3>Project Title</h3>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat
+          </p>
+          <ul class="project-stack">
+            <li>#html</li>
+            <li>#sass</li>
+            <li>#javascript</li>
+          </ul>
+         </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-content">
+          <div class="project-links">
+            <img src="assets/github.svg" alt="">
+          </div>
+          <h3>Project Title</h3>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat
+          </p>
+          <ul class="project-stack">
+            <li>#html</li>
+            <li>#sass</li>
+            <li>#javascript</li>
+          </ul>
+         </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-content">
+          <div class="project-links">
+            <img src="assets/github.svg" alt="">
+          </div>
+          <h3>Project Title</h3>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat
+          </p>
+          <ul class="project-stack">
+            <li>#html</li>
+            <li>#sass</li>
+            <li>#javascript</li>
+          </ul>
+         </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-content">
+          <div class="project-links">
+            <img src="assets/github.svg" alt="">
+          </div>
+          <h3>Project Title</h3>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat
+          </p>
+          <ul class="project-stack">
+            <li>#html</li>
+            <li>#sass</li>
+            <li>#javascript</li>
+          </ul>
+         </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-content">
+          <div class="project-links">
+            <img src="assets/github.svg" alt="">
+          </div>
+          <h3>Project Title</h3>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat
+          </p>
+          <ul class="project-stack">
+            <li>#html</li>
+            <li>#sass</li>
+            <li>#javascript</li>
+          </ul>
+         </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-content">
+          <div class="project-links">
+            <img src="assets/github.svg" alt="">
+          </div>
+          <h3>Project Title</h3>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat
+          </p>
+          <ul class="project-stack">
+            <li>#html</li>
+            <li>#sass</li>
+            <li>#javascript</li>
+          </ul>
+         </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <h2>Contact Me</h2>
+      <p>I'd love to hear from you.
+        <br> 
+        Have a lovely day!
+      </p>
+      <button class="message-btn">
+        Message
+      </button>
+    </section>
+
+  </div>
+  
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
