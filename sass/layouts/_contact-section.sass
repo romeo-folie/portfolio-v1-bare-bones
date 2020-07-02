@@ -1,0 +1,24 @@
+.contact-section
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin-top: 100px
+  margin-bottom: 100px
+  h2
+    @extend .section-header
+  p
+    @extend .section-paragraph
+    text-align: center
+    margin-top: 0
+    font-size: 1.7rem
+  .message-btn
+    @extend .transparent-btn
+    margin-top: 10px
+
+
+
+@media screen and (max-width: 600px)
+  .contact-section
+    p
+      font-size: 1.4rem

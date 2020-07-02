@@ -21,6 +21,11 @@
   font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .section-header, .contact-section h2, .project-section h2, .skill-section h2, .about-section .about-text h2 {
+    font-size: 1.8rem;
+  }
+}
 body {
   font-family: "Cutive Mono", "sans-serif", "serif";
   margin: 0;
@@ -37,6 +42,36 @@ section {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 549px) {
+  section {
+    max-width: 80%;
+  }
+}
+@media only screen and (min-width: 550px) {
+  section {
+    max-width: 75%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  section {
+    max-width: 80%;
+  }
+}
+@media only screen and (min-width: 820px) {
+  section {
+    max-width: 660px;
+  }
+}
+@media only screen and (min-width: 995px) {
+  section {
+    max-width: 850px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  section {
+    max-width: 1000px;
+  }
+}
 header.top-navigation {
   background-color: #041721;
   display: flex;
@@ -79,12 +114,64 @@ div.content-wrapper {
   margin: 15px 0 35px;
 }
 
+@media only screen and (max-width: 768px) {
+  .intro-section {
+    align-items: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 549px) {
+  .intro-section h1 {
+    font-size: 37px;
+  }
+  .intro-section h2, .intro-section h3 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .intro-section h1 {
+    font-size: 39px;
+  }
+  .intro-section h2, .intro-section h3 {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .intro-section h1 {
+    font-size: 50px;
+  }
+  .intro-section h2, .intro-section h3 {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 820px) {
+  .intro-section h1 {
+    font-size: 55px;
+  }
+  .intro-section h2, .intro-section h3 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 995px) {
+  .intro-section h1 {
+    font-size: 65px;
+  }
+  .intro-section h2, .intro-section h3 {
+    font-size: 35px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .intro-section h1 {
+    font-size: 75px;
+  }
+}
 .about-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .about-section .about-text {
   display: flex;
@@ -94,11 +181,17 @@ div.content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.skill-section p {
+  text-align: center;
 }
 .skill-section .skill-categories-wrapper {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
 .skill-section .skill-categories-wrapper .skill-category {
@@ -109,7 +202,7 @@ div.content-wrapper {
 .skill-section .skill-categories-wrapper .skill-category .skill-range {
   -webkit-appearance: none;
   height: 2px;
-  background: #fff;
+  background: #E3AE52;
 }
 .skill-section .skill-categories-wrapper .skill-category .skill-range::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -135,16 +228,23 @@ div.content-wrapper {
   margin: 13px auto;
 }
 
+@media only screen and (max-width: 600px) {
+  .skill-categories-wrapper {
+    flex-direction: column;
+  }
+}
 .project-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .project-section .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-gap: 15px;
+  margin-top: 30px;
 }
 .project-section .project-grid .project-card {
   height: 100%;
@@ -185,6 +285,8 @@ div.content-wrapper {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .contact-section p {
   text-align: center;
@@ -195,12 +297,54 @@ div.content-wrapper {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .contact-section p {
+    font-size: 1.4rem;
+  }
+}
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
+}
+.footer .footer-content-wrapper {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-content-wrapper h3 {
+  font-size: 1.2rem;
+  color: #E3AE52;
+}
+.footer .footer-content-wrapper ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.footer .footer-content-wrapper ul li:not(:first-of-type) {
+  margin-left: 25px;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer .footer-content-wrapper ul {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .footer .footer-content-wrapper h3 {
+    font-size: 1rem;
+  }
+}
 .navbar {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 15px;
 }
 .navbar ul {
   display: flex;
@@ -222,8 +366,9 @@ div.content-wrapper {
 div.brand a {
   text-decoration: none;
   color: #E3AE52;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 800;
+  font-family: "Poppins";
 }
 
 div.dropdown-menu {
@@ -257,9 +402,14 @@ div.dropdown-menu a {
   border: 1px solid #E3AE52;
 }
 
+@media only screen and (max-width: 600px) {
+  .contact-btn {
+    padding: 18px 30px;
+  }
+}
 .left-bar {
   position: fixed;
-  left: 20px;
+  left: 30px;
   top: 50vh;
   transform: translateY(-50%);
 }
@@ -281,6 +431,11 @@ div.dropdown-menu a {
   color: #E3AE52;
 }
 
+@media only screen and (max-width: 600px) {
+  .left-bar {
+    display: none;
+  }
+}
 .right-bar {
   position: fixed;
   right: 20px;
@@ -294,6 +449,12 @@ div.dropdown-menu a {
   color: #E3AE52;
   writing-mode: vertical-rl;
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .right-bar {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

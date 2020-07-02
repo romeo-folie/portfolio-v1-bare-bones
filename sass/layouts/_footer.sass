@@ -1,0 +1,35 @@
+.footer
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 70px
+  .footer-content-wrapper
+    padding: 15px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    h3
+      font-size: 1.2rem
+      color: $primary-color
+    ul
+      display: flex
+      padding: 0
+      margin: 0
+      li:not(:first-of-type)
+        margin-left: 25px  
+
+
+@media only screen and (min-width: 600px)
+  .footer
+    .footer-content-wrapper
+      ul
+        display: none
+
+
+@media only screen and (max-width: 400px)
+  .footer 
+    .footer-content-wrapper
+      h3
+        font-size: 1rem

@@ -1,0 +1,49 @@
+.skill-section
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin-top: 100px
+  margin-bottom: 100px
+  h2
+    @extend .section-header
+  p
+    @extend .section-paragraph
+    text-align: center
+  .skill-categories-wrapper
+    display: flex
+    justify-content: space-around
+    align-items: center
+    width: 100%
+    .skill-category
+      display: flex
+      flex-direction: column
+      align-items: center
+      .skill-range
+        -webkit-appearance: none
+        height: 2px
+        background: $primary-color
+        &::-webkit-slider-thumb
+          -webkit-appearance: none
+          background: $primary-color
+          height: 15px
+          width: 15px
+          border: none
+          border-radius: 50%
+      h3
+        color: $primary-color
+        font-size: 1.4rem
+      .tool-list
+        margin: 10px 0 0
+        padding: 0
+        list-style: none
+        text-align: center
+        li
+          font-size: 1.2rem
+          color: $primary-color
+          margin: 13px auto
+
+
+@media only screen and (max-width: 600px)
+  .skill-categories-wrapper
+    flex-direction: column
