@@ -23,7 +23,7 @@
       </ul>
 
       <div class="dropdown-menu">
-          <a class="dropdown-link" onclick="toggleDropdown()" href="javascript:void(0);">&#9776;</a>
+          <a class="dropdown-link" onclick="showSideNav()" href="javascript:void(0);">&#9776;</a>
       </div>
     </nav>
   </header>
@@ -53,7 +53,43 @@
     <a href="">romeofolie1@gmail.com</a>
   </div>
 
+  <aside class="side-menu" id="side-nav">
+    <div class="aside-content-wrapper">
+      <div class="btn-container">
+        <a href="javascript:void(0);" onclick="hideSideNav()">&#120;</a>
+      </div>
+
+      <nav class="side-navbar">
+        <ul class="side-navlist">
+          <li> <a class="nav-link" href="#about">About</a></li>
+          <li> <a class="nav-link" href="#skills">Skills</a></li>
+          <li> <a class="nav-link" href="#projects">Work</a></li>
+          <li> <a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <ul class="side-social-media-nav">
+            <li>
+              <a href="#github">
+                <img src="assets/github.svg" alt="github_icon">
+              </a>
+            </li>
+            <li>
+              <a href="#instagram">
+                <img src="assets/instagram.svg" alt="instagram_icon">
+              </a>
+            </li>
+            <li>
+              <a href="#twitter">
+                <img src="assets/twitter.svg" alt="twitter_icon">
+              </a>
+            </li>  
+      </ul>
+    </div>
+  </aside>
+
   <div class="content-wrapper">
+
     <section class="intro-section">
       <h1>Romeo Nutifafa Folie</h1>
       <h2>Learner, Builder, Software Engineer.</h2>
@@ -275,12 +311,9 @@
             </a>
           </li>  
         </ul>
-
         <h3>	
           &#169; Romeo Nutifafa Folie - 2020
-        </h3>
-
-        
+        </h3>        
         </div>
     </footer>
 

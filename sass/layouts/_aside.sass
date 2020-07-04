@@ -1,0 +1,64 @@
+.side-menu
+  height: 100vh
+  width: 65vw
+  z-index: 15
+  background-color: $card-bg-color
+  position: fixed
+  right: 0
+  top: 0
+  bottom: 0
+  display: none
+  .aside-content-wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    height: 100%
+    width: 100%
+    .side-navbar
+      display: flex
+      flex-direction: column
+      ul
+        margin: 0 auto
+        padding: 0
+        list-style: none
+        li
+          &:not(:first-of-type)
+            margin-top: 30px
+          a
+            text-decoration: none
+            font-size: 1.2rem
+            font-weight: 600
+            color: $primary-color
+    .side-social-media-nav
+      margin: 0
+      padding: 0
+      list-style: none
+      display: flex
+      margin: 0 auto 15px
+      li:not(:first-of-type)
+        margin-left: 25px
+    .btn-container
+      display: flex
+      width: 100%
+      justify-content: flex-end
+      padding-right: 25px
+      padding-top: 5px
+      align-items: center
+      a
+        color: #E3AE52
+        text-decoration: none
+        font-size: 2.5rem
+        font-family: sans-serif
+        outline: none
+
+.side-menu.show
+  display: block
+
+
+@media screen and (min-width: 600px)
+  .side-menu
+    display: none
+
+  .side-menu.show
+    display: none

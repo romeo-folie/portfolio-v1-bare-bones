@@ -64,7 +64,7 @@ section {
 }
 @media only screen and (min-width: 995px) {
   section {
-    max-width: 850px;
+    max-width: 800px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -83,6 +83,9 @@ header.top-navigation {
   align-items: center;
   transition: top 0.3s;
   z-index: 15;
+  -webkit-box-shadow: 10px 13px 15px -20px black;
+  -moz-box-shadow: 10px 13px 15px -20px black;
+  box-shadow: 10px 13px 15px -20px black;
 }
 
 div.content-wrapper {
@@ -191,8 +194,9 @@ div.content-wrapper {
 .skill-section .skill-categories-wrapper {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
+  margin-top: 15px;
 }
 .skill-section .skill-categories-wrapper .skill-category {
   display: flex;
@@ -231,6 +235,7 @@ div.content-wrapper {
 @media only screen and (max-width: 600px) {
   .skill-categories-wrapper {
     flex-direction: column;
+    align-items: center !important;
   }
 }
 .project-section {
@@ -302,6 +307,82 @@ div.content-wrapper {
     font-size: 1.4rem;
   }
 }
+.side-menu {
+  height: 100vh;
+  width: 65vw;
+  z-index: 15;
+  background-color: #011C2B;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+}
+.side-menu .aside-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.side-menu .aside-content-wrapper .side-navbar {
+  display: flex;
+  flex-direction: column;
+}
+.side-menu .aside-content-wrapper .side-navbar ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.side-menu .aside-content-wrapper .side-navbar ul li:not(:first-of-type) {
+  margin-top: 30px;
+}
+.side-menu .aside-content-wrapper .side-navbar ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #E3AE52;
+}
+.side-menu .aside-content-wrapper .side-social-media-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0 auto 15px;
+}
+.side-menu .aside-content-wrapper .side-social-media-nav li:not(:first-of-type) {
+  margin-left: 25px;
+}
+.side-menu .aside-content-wrapper .btn-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 25px;
+  padding-top: 5px;
+  align-items: center;
+}
+.side-menu .aside-content-wrapper .btn-container a {
+  color: #E3AE52;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-family: sans-serif;
+  outline: none;
+}
+
+.side-menu.show {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .side-menu {
+    display: none;
+  }
+
+  .side-menu.show {
+    display: none;
+  }
+}
 .footer {
   width: 100%;
   display: flex;
@@ -324,6 +405,7 @@ div.content-wrapper {
   display: flex;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 .footer .footer-content-wrapper ul li:not(:first-of-type) {
   margin-left: 25px;
@@ -377,9 +459,9 @@ div.dropdown-menu {
 div.dropdown-menu a {
   text-decoration: none;
   color: #E3AE52;
-  font-size: x-large;
+  font-size: 1.9rem;
+  outline: none;
 }
-
 @media screen and (max-width: 600px) {
   ul.navlist {
     display: none;
