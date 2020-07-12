@@ -2,8 +2,8 @@
   display: flex
   flex-direction: column
   justify-content: center
-  align-items: start
-  padding-top: 50px
+  align-items: flex-start
+  padding-top: 30px
   h1
     font-family: 'Paytone One'
     color: $primary-color
@@ -14,10 +14,12 @@
     color: $primary-color
     font-size: 38px
     margin: 0
+  h2
+    margin: 5px 0 10px
   h3
     margin: 15px 0 35px
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 800px)
   .intro-section
     align-items: center
     text-align: center
@@ -26,23 +28,23 @@
 @media only screen and (max-width: 549px)
   .intro-section
     h1
-      font-size: 37px
+      font-size: 39px
     h2,h3
       font-size: 20px
 
 @media only screen and (min-width: 550px)
   .intro-section
     h1
-      font-size: 39px
+      font-size: 48px
     h2,h3
-      font-size: 22px
+      font-size: 24px
 
 @media only screen and (min-width: 768px)
   .intro-section
     h1
-      font-size: 45px
+      font-size: 50px
     h2,h3
-      font-size: 23px
+      font-size: 25px
 
 @media only screen and (min-width: 820px)
   .intro-section
@@ -61,4 +63,6 @@
 @media only screen and (min-width: 1200px)
   .intro-section
     h1
-      font-size: 75px
+      font-size: 80px
+    h2,h3
+      font-size: 40px

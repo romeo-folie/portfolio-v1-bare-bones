@@ -3,7 +3,7 @@
 	display: flex
 	align-items: center
 	justify-content: space-between
-	padding: 0 15px
+	padding: 0 20px
 	ul
 		display: flex
 		margin: 0
@@ -11,7 +11,8 @@
 		list-style: none
 		text-decoration: none
 		li
-			margin-left: 20px
+			&:not(:first-of-type)
+				margin-left: 20px
 			a
 				text-decoration: none
 				font-size: 1.2rem
@@ -43,3 +44,15 @@ div.dropdown-menu
 
 	div.dropdown-menu
 		display: block
+
+
+@media screen and (min-width: 1200px)
+	div.brand
+		a
+			font-size: 2.0rem
+
+	.navbar
+		ul
+			li
+				a
+					font-size: 1.3rem

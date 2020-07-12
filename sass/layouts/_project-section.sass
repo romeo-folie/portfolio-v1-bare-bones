@@ -2,8 +2,8 @@
   display: flex
   flex-direction: column
   align-items: center
-  margin-top: 100px
-  margin-bottom: 100px
+  margin: 100px auto
+  padding-top: 60px
   h2
     @extend .section-header
   .project-grid
@@ -15,7 +15,7 @@
       height: 100%
       display: flex
       flex-direction: column
-      justify-content: start
+      justify-content: flex-start
       background-color: $card-bg-color
       .project-card-content
         padding: 20px
@@ -33,6 +33,6 @@
           padding: 0
           list-style: none
           li
-            color: #fff
+            color: #fff	
             &:not(:first-of-type)
               margin-left: 10px
