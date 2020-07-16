@@ -23,12 +23,6 @@
   font-size: 1.2rem;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 @media only screen and (max-width: 600px) {
   .section-header, .contact-section h2, .project-section h2, .skill-section h2, .about-section .about-text h2 {
     font-size: 1.8rem;
@@ -48,6 +42,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 section {
