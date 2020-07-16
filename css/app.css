@@ -23,6 +23,12 @@
   font-size: 1.2rem;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 @media only screen and (max-width: 600px) {
   .section-header, .contact-section h2, .project-section h2, .skill-section h2, .about-section .about-text h2 {
     font-size: 1.8rem;
@@ -374,7 +380,7 @@ div.content-wrapper {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  padding-right: 35px;
+  padding-right: 50px;
   padding-top: 5px;
   align-items: center;
 }
@@ -414,7 +420,7 @@ div.content-wrapper {
   align-items: center;
 }
 .footer .footer-content-wrapper h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #E3AE52;
 }
 .footer .footer-content-wrapper ul {
@@ -432,7 +438,7 @@ div.content-wrapper {
     display: none;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .footer .footer-content-wrapper h3 {
     font-size: 1rem;
   }
