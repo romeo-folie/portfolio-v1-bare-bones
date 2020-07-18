@@ -11,18 +11,21 @@ window.onscroll = function() {
 }
 
 function showSideNav() {
-  let sideNavToggle = document.getElementById('side-nav');
-  if(sideNavToggle.className === 'side-menu'){
-    sideNavToggle.className += ' show';
+  const sideNavToggle = document.getElementById('side-nav')
+  const mediaNav = document.getElementById('social-media-nav-bottom')
+  mediaNav.style.visibility = 'hidden'
+  if (sideNavToggle.className === 'side-menu') {
+    sideNavToggle.className += ' show'
   } else {
     sideNavToggle.className = 'side-menu'
   }
 }
 
-
-function hideSideNav(){
-  let sideNavToggle = document.getElementById('side-nav');
-  if(sideNavToggle.className === 'side-menu show'){
+function hideSideNav() {
+  const sideNavToggle = document.getElementById('side-nav')
+  const mediaNav = document.getElementById('social-media-nav-bottom')
+  mediaNav.style.visibility = 'visible'
+  if (sideNavToggle.className === 'side-menu show') {
     sideNavToggle.className = 'side-menu'
   }
 }
