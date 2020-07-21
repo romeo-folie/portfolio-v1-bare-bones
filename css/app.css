@@ -196,6 +196,17 @@ div.content-wrapper {
   display: flex;
   flex-direction: column;
 }
+.about-section .about-text p {
+  font-size: 1.3rem;
+}
+.about-section .about-text .cv-download-btn {
+  margin-top: 10px;
+}
+.about-section .about-text .cv-download-btn:hover {
+  background-color: #E3AE52;
+  color: #041721;
+}
+
 .skill-section {
   display: flex;
   flex-direction: column;
