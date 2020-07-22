@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-.section-header, .contact-section h2, .project-section h2, .skill-section h2, .about-section .about-text h2 {
+.section-header, .blog-list-section h2, .contact-section h2, .project-section h2, .skill-section h2, .about-section .about-text h2 {
   font-size: 2.2rem;
   color: #E3AE52;
   font-family: "Paytone One";
@@ -24,7 +24,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .section-header, .contact-section h2, .project-section h2, .skill-section h2, .about-section .about-text h2 {
+  .section-header, .blog-list-section h2, .contact-section h2, .project-section h2, .skill-section h2, .about-section .about-text h2 {
     font-size: 1.8rem;
   }
 
@@ -340,6 +340,149 @@ div.content-wrapper {
 @media screen and (max-width: 600px) {
   .contact-section p {
     font-size: 1.4rem;
+  }
+}
+.blog-list-section {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.blog-list-section .blog-post-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.blog-list-section .blog-post-wrapper .blog-post {
+  display: flex;
+  min-height: 220px;
+  padding-right: 30px;
+  margin: 10px 0;
+}
+.blog-list-section .blog-post-wrapper .blog-post .date-tl {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.blog-list-section .blog-post-wrapper .blog-post .date-tl .date {
+  color: #E3AE52;
+  margin: 0;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  font-weight: 100;
+  flex: 1;
+}
+.blog-list-section .blog-post-wrapper .blog-post .date-tl .date span {
+  color: #fff;
+}
+.blog-list-section .blog-post-wrapper .blog-post .date-tl .vertical-line {
+  width: 0.75px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
+  flex: 3;
+}
+.blog-list-section .blog-post-wrapper .blog-post .post-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+}
+.blog-list-section .blog-post-wrapper .blog-post .post-text h3 {
+  color: #E3AE52;
+  margin: 0;
+  font-size: 1.3rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog-list-section .blog-post-wrapper .blog-post .post-text p {
+  color: #fff;
+  text-align: left;
+  font-size: 1.1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog-list-section .blog-post-wrapper .blog-post .post-text a {
+  text-decoration: none;
+  color: #E3AE52;
+  margin-left: auto;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 620px) {
+  .blog-list-section .blog-post-wrapper .blog-post .post-text h3 {
+    font-size: 1.2rem;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .post-text p {
+    font-size: 1rem;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .post-text a {
+    font-size: 1rem;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .post-text .date-tl .date {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 397px) and (min-width: 323px) {
+  .blog-list-section .blog-post-wrapper .blog-post .post-text h3 {
+    font-size: 1.1rem;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .post-text p {
+    font-size: 0.95rem;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .post-text a {
+    font-size: 0.95rem;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .date-tl {
+    margin: 0;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .date-tl .date {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 322px) {
+  .blog-list-section .blog-post-wrapper .blog-post .post-text h3 {
+    font-size: 1rem;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .post-text p {
+    font-size: 0.9rem;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .post-text a {
+    font-size: 0.9rem;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .date-tl {
+    margin: 0;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .date-tl .date {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .blog-list-section .blog-post-wrapper {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .post-text h3 {
+    font-size: 1.4rem;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .post-text p {
+    font-size: 1.15rem;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .post-text a {
+    font-size: 1.15rem;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .date-tl {
+    margin: 0;
+  }
+  .blog-list-section .blog-post-wrapper .blog-post .date-tl .date {
+    font-size: 1.3rem;
   }
 }
 .side-menu {
