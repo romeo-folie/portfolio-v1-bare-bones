@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/app.css" />
+    <title>Folie</title>
+  </head>
+  <body>
+    <header class="top-navigation" id="navbar">
+      <nav class="navbar">
+        <div class="brand">
+          <a href="#">
+            {rnf}
+          </a>
+        </div>
+
+        <ul class="navlist">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Work</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="dropdown-menu">
+          <a
+            class="dropdown-link"
+            onclick="showSideNav()"
+            href="javascript:void(0);"
+            ><img src="assets/menu.svg" alt="menu_icon"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="left-bar">
+      <ul class="social-media-nav">
+        <li>
+          <a href="#github">
+            <img src="assets/github.svg" alt="github_icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#instagram">
+            <img src="assets/instagram.svg" alt="instagram_icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#twitter">
+            <img src="assets/twitter.svg" alt="twitter_icon" />
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="right-bar">
+      <a href="">romeofolie1@gmail.com</a>
+    </div>
+
+    <aside class="side-menu" id="side-nav">
+      <div class="aside-wrapper">
+        <div class="btn-container">
+          <a href="javascript:void(0);" onclick="hideSideNav()">
+            <img src="assets/x.svg" alt="close_icon">
+          </a>
+        </div>
+  
+        <nav class="side-navbar">
+          <ul class="side-navlist">
+            <li> <a class="nav-link" href="#about" onclick="hideSideNav()">About</a></li>
+            <li> <a class="nav-link" href="#skills" onclick="hideSideNav()">Skills</a></li>
+            <li> <a class="nav-link" href="#projects" onclick="hideSideNav()">Work</a></li>
+            <li> <a class="nav-link" href="#contact" onclick="hideSideNav()">Contact</a></li>
+          </ul>
+        </nav>
+  
+        <ul class="side-social-media-nav">
+              <li>
+                <a href="#github">
+                  <img src="assets/github.svg" alt="github_icon">
+                </a>
+              </li>
+              <li>
+                <a href="#instagram">
+                  <img src="assets/instagram.svg" alt="instagram_icon">
+                </a>
+              </li>
+              <li>
+                <a href="#twitter">
+                  <img src="assets/twitter.svg" alt="twitter_icon">
+                </a>
+              </li>  
+        </ul>
+      </div>
+    </aside>
+
+    <div class="content-wrapper">
+
+      <section class="post-view">
+        <div class="post-content-wrapper">
+          <div class="title-date">
+            <h3>First attempt at designing a blog</h3>
+            <span>JUL 25</span>
+          </div>
+
+          <img src="assets/pawpaw.jpg" alt="headline_img" />
+
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum,
+            reiciendis, aliquam voluptatem repudiandae soluta quibusdam
+            doloremque quidem libero, impedit sapiente delectus maxime nisi ab
+            ipsa fugit recusandae quas repellat.
+            <br />
+            <br />
+            Quaerat aut perspiciatis aspernatur laborum error numquam commodi,
+            vitae quidem autem rem totam! Fugiat, aliquam blanditiis. Harum
+            laudantium modi nam saepe.
+            <br />
+            <br />
+            Quaerat aut perspiciatis aspernatur laborum error numquam commodi,
+            vitae quidem autem rem totam! Fugiat, aliquam blanditiis. Harum
+            laudantium modi nam saepe. Quaerat aut perspiciatis aspernatur
+            laborum error numquam commodi, vitae quidem autem rem totam! Fugiat,
+            aliquam blanditiis. Harum laudantium modi nam saepe.
+            <br />
+            <br />
+            Quaerat aut perspiciatis aspernatur laborum error numquam commodi,
+            vitae quidem autem rem totam! Fugiat, aliquam blanditiis. Harum
+            laudantium modi nam saepe.
+            <br />
+            <br />
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

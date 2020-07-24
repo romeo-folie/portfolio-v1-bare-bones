@@ -23,6 +23,15 @@
   font-size: 1.2rem;
 }
 
+.default-column-section, .post-view, .blog-list-section {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 @media only screen and (max-width: 600px) {
   .section-header, .blog-list-section h2, .contact-section h2, .project-section h2, .skill-section h2, .about-section .about-text h2 {
     font-size: 1.8rem;
@@ -342,14 +351,6 @@ div.content-wrapper {
     font-size: 1.4rem;
   }
 }
-.blog-list-section {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
 .blog-list-section .blog-post-wrapper {
   display: flex;
   flex-direction: column;
@@ -483,6 +484,132 @@ div.content-wrapper {
   }
   .blog-list-section .blog-post-wrapper .blog-post .date-tl .date {
     font-size: 1.3rem;
+  }
+}
+.post-view .post-content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.post-view .post-content-wrapper .title-date {
+  display: flex;
+  margin: 30px 0;
+  justify-content: center;
+  align-items: center;
+}
+.post-view .post-content-wrapper .title-date h3 {
+  margin: 0;
+  color: #E3AE52;
+  font-size: 2.3rem;
+  margin-right: 30px;
+  text-align: left;
+}
+.post-view .post-content-wrapper .title-date span {
+  color: #fff;
+  white-space: nowrap;
+}
+.post-view .post-content-wrapper img {
+  width: auto;
+  max-height: 350px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.post-view .post-content-wrapper p {
+  text-align: left;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 630px) {
+  .post-view .post-content-wrapper {
+    width: 100%;
+  }
+  .post-view .post-content-wrapper .title-date h3 {
+    font-size: 1.9rem;
+  }
+  .post-view .post-content-wrapper img {
+    max-height: 300px;
+  }
+  .post-view .post-content-wrapper p {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 485px) {
+  .post-view .post-content-wrapper .title-date h3 {
+    font-size: 1.5rem;
+  }
+  .post-view .post-content-wrapper img {
+    max-height: 250px;
+  }
+  .post-view .post-content-wrapper p {
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .post-view .post-content-wrapper .title-date {
+    flex-direction: column;
+  }
+  .post-view .post-content-wrapper .title-date h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    margin: 0 auto 15px;
+    text-align: center;
+  }
+  .post-view .post-content-wrapper img {
+    max-height: 225px;
+  }
+  .post-view .post-content-wrapper p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .post-view .post-content-wrapper .title-date span {
+    font-size: 0.9rem;
+  }
+  .post-view .post-content-wrapper img {
+    max-height: 200px;
+  }
+}
+@media only screen and (max-width: 335px) {
+  .post-view .post-content-wrapper img {
+    max-height: 180px;
+  }
+  .post-view .post-content-wrapper p {
+    font-size: 0.95rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .post-view .post-content-wrapper .title-date h3 {
+    font-size: 1.48rem;
+  }
+  .post-view .post-content-wrapper img {
+    max-height: 170px;
+  }
+}
+@media only screen and (max-width: 250px) {
+  .post-view .post-content-wrapper .title-date h3 {
+    font-size: 1.4rem;
+  }
+  .post-view .post-content-wrapper img {
+    max-height: 145px;
+  }
+  .post-view .post-content-wrapper p {
+    font-size: 0.9;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .post-view .post-content-wrapper {
+    width: 80%;
+  }
+  .post-view .post-content-wrapper .title-date h3 {
+    font-size: 2.6rem;
+  }
+  .post-view .post-content-wrapper .title-date span {
+    font-size: 1.2rem;
+  }
+  .post-view .post-content-wrapper p {
+    font-size: 1.4rem;
   }
 }
 .side-menu {
