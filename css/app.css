@@ -373,15 +373,17 @@ div.content-wrapper {
   white-space: nowrap;
   font-weight: 100;
   flex: 1;
+  text-transform: uppercase;
 }
 .blog-list-section .blog-post-wrapper .blog-post .date-tl .date span {
-  color: #fff;
+  color: #D3D3D3;
+  text-transform: uppercase;
 }
 .blog-list-section .blog-post-wrapper .blog-post .date-tl .vertical-line {
   width: 0.75px;
   height: auto;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #D3D3D3;
   flex: 3;
 }
 .blog-list-section .blog-post-wrapper .blog-post .post-text {
@@ -500,12 +502,13 @@ div.content-wrapper {
   margin: 0;
   color: #E3AE52;
   font-size: 2.3rem;
-  margin-right: 30px;
   text-align: left;
+  margin-right: 30px;
 }
 .post-view .post-content-wrapper .title-date span {
-  color: #fff;
+  color: #D3D3D3;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 .post-view .post-content-wrapper img {
   width: auto;
@@ -552,7 +555,6 @@ div.content-wrapper {
   }
   .post-view .post-content-wrapper .title-date h3 {
     font-size: 1.8rem;
-    margin: 0;
     margin: 0 auto 15px;
     text-align: center;
   }
@@ -603,13 +605,21 @@ div.content-wrapper {
     width: 80%;
   }
   .post-view .post-content-wrapper .title-date h3 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
   .post-view .post-content-wrapper .title-date span {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .post-view .post-content-wrapper p {
     font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .post-view .post-content-wrapper .title-date h3 {
+    font-size: 2.5rem;
+  }
+  .post-view .post-content-wrapper .title-date span {
+    font-size: 1.2rem;
   }
 }
 .side-menu {
