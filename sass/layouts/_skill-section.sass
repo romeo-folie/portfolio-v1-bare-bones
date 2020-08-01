@@ -25,6 +25,8 @@
         -webkit-appearance: none
         height: 2px
         background: $primary-color
+        &:disabled
+          background: $primary-color
         &::-webkit-slider-thumb
           -webkit-appearance: none
           background: $primary-color
@@ -32,6 +34,8 @@
           width: 15px
           border: none
           border-radius: 50%
+        &:disabled::-webkit-slider-thumb
+          background: $primary-color
       h3
         color: $primary-color
         font-size: 1.4rem
