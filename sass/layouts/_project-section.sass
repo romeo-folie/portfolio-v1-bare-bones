@@ -6,6 +6,14 @@
   padding-top: 60px
   h2
     @extend .section-header
+  .more-btn
+    @extend .transparent-btn
+    margin-top: 30px
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      margin-left: 10px
   .project-grid
     display: grid
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))
@@ -26,6 +34,9 @@
         .project-links
           display: flex
           justify-content: flex-end
+          align-items: center
+          img#link
+            margin-right: 10px
         h3
           font-size: 1.2rem
           margin: 10px 0

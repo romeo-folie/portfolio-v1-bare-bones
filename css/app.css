@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cutive+Mono&family=Fredericka+the+Great&family=Lato:wght@400;700;900&family=Paytone+One&family=Poppins:wght@600;700;800&display=swap");
-.transparent-btn, .contact-btn, .contact-section .message-btn, .about-section .about-text .cv-download-btn {
+.transparent-btn, .contact-btn, .contact-section .message-btn, .project-section .more-btn, .about-section .about-text .cv-download-btn {
   background: transparent;
   color: #E3AE52;
   padding: 20px 38px;
@@ -37,7 +37,7 @@
     font-size: 1.8rem;
   }
 
-  .transparent-btn, .contact-btn, .contact-section .message-btn, .about-section .about-text .cv-download-btn {
+  .transparent-btn, .contact-btn, .contact-section .message-btn, .project-section .more-btn, .about-section .about-text .cv-download-btn {
     font-size: 1rem;
     padding: 15px 25px;
   }
@@ -284,6 +284,15 @@ div.content-wrapper {
   margin: 100px auto;
   padding-top: 60px;
 }
+.project-section .more-btn {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-section .more-btn img {
+  margin-left: 10px;
+}
 .project-section .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -307,6 +316,10 @@ div.content-wrapper {
 .project-section .project-grid .project-card .project-card-content .project-links {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+}
+.project-section .project-grid .project-card .project-card-content .project-links img#link {
+  margin-right: 10px;
 }
 .project-section .project-grid .project-card .project-card-content h3 {
   font-size: 1.2rem;
